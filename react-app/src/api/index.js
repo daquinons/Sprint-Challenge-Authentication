@@ -18,13 +18,11 @@ const getHeaders = () => {
       'Authorization': token
     };
   }
-  console.log('No token');
   return {};
 };
 
 const saveToken = (token) => {
   localStorage.setItem('token', token);
-  console.log("Saved token", localStorage.getItem('token'));
 }
 
 const client = axios.create({
