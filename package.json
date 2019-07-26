@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js",
-    "test": "jest"
+    "test": "DB_ENV=testing jest",
+    "test:watch": "DB_ENV=testing jest --watchAll"
   },
   "repository": {
     "type": "git",
